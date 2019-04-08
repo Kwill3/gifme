@@ -1,33 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to right,#d1fdf7,#31ffa9);
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  ". . . ."
+  "title title title title"
+  ". . . ."
+  ". instructions instructions ."
+  ". search search ."
+  ". generate generate ."
+  "display display display display"
+  "display display display display";
+  grid-gap: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  grid-area: title;
+  justify-self: center;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search {
+  grid-area: search;
+  justify-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.generate {
+  grid-area: generate;
+  justify-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display {
+  grid-area: display;
+  justify-items: center;
 }
+
+#instructions {
+  grid-area: instructions;
+  justify-self: center;
+}
+
