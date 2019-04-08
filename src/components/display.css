@@ -1,0 +1,10 @@
+.display {
+  float: left;
+  justify-content: center;
+  text-align: center;
+}
+
+.display img {
+  margin: 10px;
+  border-radius: 15px;
+}
