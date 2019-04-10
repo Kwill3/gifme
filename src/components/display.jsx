@@ -18,14 +18,21 @@ class Display extends Component {
   render() {
     var images = this.props.handleDisplay
     var renderImages = images.map((i) => {
-      return React.createElement(
-        "div",
-        null,
-        React.createElement("img", {
-          src: i,
-          alt: "Giphy" }),
-      );
+      return (
+        <div>
+          <img src={i} alt="Giphy"/>
+        </div>
+      )
+      
+      // React.createElement(
+      //   "div",
+      //   null,
+      //   React.createElement("img", {
+      //     src: i,
+      //     alt: "Giphy" }),
+      // );
     });
+    
     return (
       <div className="display" ref="display">
         {renderImages}

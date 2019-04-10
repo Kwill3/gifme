@@ -16,11 +16,15 @@ class App extends Component {
   }
 
   getSearch = async (e) => {
+    // Prevent page from refreshing
     e.preventDefault()
-    const query = e.target.elements.query.value;
-    const api_call = await fetch(`http://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}`);
+    // Replace spaces with '+'
+    const query = (e.target.elements.query.value).replace(/\s/g, '+');
+    // Fetch data from API
+    const api_call = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}`);
     const json = await api_call.json();
     console.log(json);
+    // Push urls from returned data into array
     const arr = [];
     for (let i = 0; i < json.data.length; i++) {
       arr.push(json.data[i].images.original.url);
@@ -31,9 +35,11 @@ class App extends Component {
   }
 
   getTrending = async() => {
-    const api_call = await fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}`);
+    // Fetch data from API
+    const api_call = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}`);
     const json = await api_call.json();
     console.log(json);
+    // Push urls from returned data into array
     const arr = [];
     for (let i = 0; i < json.data.length; i++) {
       arr.push(json.data[i].images.original.url);
@@ -44,9 +50,11 @@ class App extends Component {
   }
 
   getRandom = async() => {
-    const api_call = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`);
+    // Fetch data from API
+    const api_call = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`);
     const json = await api_call.json();
     console.log(json);
+    // Push urls from returned data into array
     const arr = [];
     arr.push(json.data.images.original.url);
     this.setState({
