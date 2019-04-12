@@ -16,11 +16,11 @@ class Display extends Component {
   // }
 
   render() {
-    var images = this.props.handleDisplay
-    var renderImages = images.map((i) => {
+    var urls = this.props.handleDisplay
+    var renderImages = urls.map((i) => {
       return (
-        <div>
-          <img src={i} alt="Giphy"/>
+        <div key={i.key}>
+          <img src={i.url} srcSet={`${i.url_fw} 480w, ${i.url} 1800w`} sizes={`(max-width: 800px) 800px, 1800px`} alt="Giphy"/>
         </div>
       )
       

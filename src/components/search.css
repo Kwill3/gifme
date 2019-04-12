@@ -15,3 +15,19 @@
   background-color: #2c2c2c;
   color: #fff;
 }
+
+@media only screen and (max-width: 800px) {
+  #search-field {
+  font-size: 15px;
+  padding: 8px;
+  width: 150px;
+  margin-top: 8px;
+  }
+
+  #search-btn {
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+}
