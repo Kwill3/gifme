@@ -4,14 +4,11 @@ import Search from './components/search';
 import Generate from './components/generate';
 import Display from './components/display';
 
-const API_KEY = 'dV4458Zz6uvL4aZybeNPkgaS0lJhpwiZ';
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: '',
-      items: [],
+      urls: []
     }
   }
 
@@ -21,44 +18,56 @@ class App extends Component {
     // Replace spaces with '+'
     const query = (e.target.elements.query.value).replace(/\s/g, '+');
     // Fetch data from API
-    const api_call = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}`);
-    const json = await api_call.json();
+    const json = await fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=dV4458Zz6uvL4aZybeNPkgaS0lJhpwiZ`).then(response => response.json());
     console.log(json);
-    // Push urls from returned data into array
+    // Assign unique keys to urls from returned data
     const arr = [];
     for (let i = 0; i < json.data.length; i++) {
-      arr.push(json.data[i].images.original.url);
+      arr.push(
+        {
+          url : [json.data[i].images.original.url],
+          url_fw : [json.data[i].images.fixed_width.url],
+          key : [json.data[i].id]
+        });
     }
     this.setState({
-      items: arr
+      urls: arr
     })
   }
 
   getTrending = async() => {
     // Fetch data from API
-    const api_call = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}`);
-    const json = await api_call.json();
+    const json = await fetch(`https://api.giphy.com/v1/gifs/trending?api_key=dV4458Zz6uvL4aZybeNPkgaS0lJhpwiZ`).then(response => response.json());
     console.log(json);
-    // Push urls from returned data into array
+    // Assign unique keys to urls from returned data
     const arr = [];
     for (let i = 0; i < json.data.length; i++) {
-      arr.push(json.data[i].images.original.url);
+      arr.push(
+        {
+          url : [json.data[i].images.original.url],
+          url_fw : [json.data[i].images.fixed_width.url],
+          key : [json.data[i].id]
+        });
     }
     this.setState({
-      items: arr
+      urls: arr
     })
   }
 
   getRandom = async() => {
     // Fetch data from API
-    const api_call = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`);
-    const json = await api_call.json();
+    const json = await fetch(`https://api.giphy.com/v1/gifs/random?api_key=dV4458Zz6uvL4aZybeNPkgaS0lJhpwiZ`).then(response => response.json());;
     console.log(json);
     // Push urls from returned data into array
     const arr = [];
-    arr.push(json.data.images.original.url);
+    arr.push(
+        {
+          url : [json.data.images.original.url],
+          url_fw : [json.data.images.fixed_width.url],
+          key : [json.data.id]
+        });
     this.setState({
-      items: arr
+      urls: arr
     })
   }
   
@@ -69,7 +78,7 @@ class App extends Component {
         <p id="instructions">Click one of the buttons below to start generating GIFs</p>
         <Search className="search" handleSubmit={this.getSearch}/>
         <Generate className="generate" handleTrending={this.getTrending} handleRandom={this.getRandom}/>
-        <Display handleDisplay={this.state.items}/>
+        <Display handleDisplay={this.state.urls}/>
       </div>
     );
   }
