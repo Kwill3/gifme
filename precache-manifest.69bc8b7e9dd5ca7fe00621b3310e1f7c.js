@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/gifme/static/js/runtime~main.eb951287.js"
   },
   {
-    "revision": "a6944c72a555392dacb6",
+    "revision": "d4ead9b0c72dffdd39b1",
     "url": "/gifme/static/js/main.16d0cb7b.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/gifme/static/js/2.66773f37.chunk.js"
   },
   {
-    "revision": "a6944c72a555392dacb6",
-    "url": "/gifme/static/css/main.2879b696.chunk.css"
+    "revision": "d4ead9b0c72dffdd39b1",
+    "url": "/gifme/static/css/main.33b787d2.chunk.css"
   },
   {
-    "revision": "8de46b1429102b6b7a353ae188778866",
+    "revision": "a2f1ad5a6d8dfd9cb28156eb30de5181",
     "url": "/gifme/index.html"
   }
 ];

@@ -1,5 +1,5 @@
 {
-  "main.css": "/gifme/static/css/main.2879b696.chunk.css",
+  "main.css": "/gifme/static/css/main.33b787d2.chunk.css",
   "main.js": "/gifme/static/js/main.16d0cb7b.chunk.js",
   "main.js.map": "/gifme/static/js/main.16d0cb7b.chunk.js.map",
   "runtime~main.js": "/gifme/static/js/runtime~main.eb951287.js",
@@ -7,7 +7,7 @@
   "static/js/2.66773f37.chunk.js": "/gifme/static/js/2.66773f37.chunk.js",
   "static/js/2.66773f37.chunk.js.map": "/gifme/static/js/2.66773f37.chunk.js.map",
   "index.html": "/gifme/index.html",
-  "precache-manifest.7752a6900dac27856533b69396ad8014.js": "/gifme/precache-manifest.7752a6900dac27856533b69396ad8014.js",
+  "precache-manifest.69bc8b7e9dd5ca7fe00621b3310e1f7c.js": "/gifme/precache-manifest.69bc8b7e9dd5ca7fe00621b3310e1f7c.js",
   "service-worker.js": "/gifme/service-worker.js",
-  "static/css/main.2879b696.chunk.css.map": "/gifme/static/css/main.2879b696.chunk.css.map"
+  "static/css/main.33b787d2.chunk.css.map": "/gifme/static/css/main.33b787d2.chunk.css.map"
 }
