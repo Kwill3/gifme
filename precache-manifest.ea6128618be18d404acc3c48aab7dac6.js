@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/gifme/static/js/runtime~main.eb951287.js"
   },
   {
-    "revision": "033bc49a5236d95eb0ba",
-    "url": "/gifme/static/js/main.a842c380.chunk.js"
+    "revision": "90e3c3843df2a4148d85",
+    "url": "/gifme/static/js/main.94da84d3.chunk.js"
   },
   {
     "revision": "2f73ea753d7706ddce9c",
     "url": "/gifme/static/js/2.66773f37.chunk.js"
   },
   {
-    "revision": "033bc49a5236d95eb0ba",
-    "url": "/gifme/static/css/main.3497f86d.chunk.css"
+    "revision": "90e3c3843df2a4148d85",
+    "url": "/gifme/static/css/main.2879b696.chunk.css"
   },
   {
-    "revision": "6a0b6f27bb51dac2e9aff99d86094b75",
+    "revision": "c4c510fc954bd3a541ca7f26c3ece73a",
     "url": "/gifme/index.html"
   }
 ];

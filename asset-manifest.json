@@ -1,13 +1,13 @@
 {
-  "main.css": "/gifme/static/css/main.3497f86d.chunk.css",
-  "main.js": "/gifme/static/js/main.a842c380.chunk.js",
-  "main.js.map": "/gifme/static/js/main.a842c380.chunk.js.map",
+  "main.css": "/gifme/static/css/main.2879b696.chunk.css",
+  "main.js": "/gifme/static/js/main.94da84d3.chunk.js",
+  "main.js.map": "/gifme/static/js/main.94da84d3.chunk.js.map",
   "runtime~main.js": "/gifme/static/js/runtime~main.eb951287.js",
   "runtime~main.js.map": "/gifme/static/js/runtime~main.eb951287.js.map",
   "static/js/2.66773f37.chunk.js": "/gifme/static/js/2.66773f37.chunk.js",
   "static/js/2.66773f37.chunk.js.map": "/gifme/static/js/2.66773f37.chunk.js.map",
   "index.html": "/gifme/index.html",
-  "precache-manifest.b4f5a9d9b9769bc801c0d65bbde82529.js": "/gifme/precache-manifest.b4f5a9d9b9769bc801c0d65bbde82529.js",
+  "precache-manifest.ea6128618be18d404acc3c48aab7dac6.js": "/gifme/precache-manifest.ea6128618be18d404acc3c48aab7dac6.js",
   "service-worker.js": "/gifme/service-worker.js",
-  "static/css/main.3497f86d.chunk.css.map": "/gifme/static/css/main.3497f86d.chunk.css.map"
+  "static/css/main.2879b696.chunk.css.map": "/gifme/static/css/main.2879b696.chunk.css.map"
 }
